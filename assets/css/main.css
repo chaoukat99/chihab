@@ -1466,13 +1466,18 @@ section,
 --------------------------------------------------------------*/
 .recent-posts article {
   background: var(--surface-color);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 16px rgba(77, 72, 72, 0.1);
   padding: 30px;
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
 }
-
+.recent-posts article:hover{
+  scale: 1.03;
+    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.1),-10px -10px 16px rgba(0, 0, 0, 0.1);
+}
 .recent-posts .post-img {
   max-height: 100%;
   margin: -30px -30px 15px -30px;
@@ -2441,3 +2446,4 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
